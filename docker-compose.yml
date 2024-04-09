@@ -1,0 +1,44 @@
+services:
+
+    dj-mariadb:
+        image: mariadb:latest
+        hostname: dj-mariadb
+        environment:
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_USER: ${MYSQL_USER}
+        ports:
+            - "3306:3306"
+        networks:
+            - dom-network
+        volumes:
+            - maria-data:/var/lib/mysql
+
+    domserver:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        hostname: domserver
+        environment:
+            MYSQL_HOST: ${MYSQL_HOST}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_USER: ${MYSQL_USER}
+        networks:
+            - dom-network
+        volumes:
+            - domjudge-data:/opt
+        ports:
+            - "12345:80"
+        links:
+            - "dj-mariadb:mariadb"
+    
+networks:
+  dom-network:
+      driver: bridge
+volumes:
+  maria-data:
+  domjudge-data:
+        
