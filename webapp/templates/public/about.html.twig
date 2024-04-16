@@ -1,0 +1,76 @@
+{% extends "public/base.html.twig" %}
+
+{% block title %} About {{ current_public_contest.shortname | default('') }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+<div class="aboutInfo">
+  <div class="maratonReview">
+    <img class="mb-4" src="{{ asset('images/security/logoSergioB.jpg') }}" alt="Universidad Sergio Arboleda" width="600" style="display: block;
+    margin-left: auto;
+    margin-right: auto;">
+    <div style="justify-content:center; text-align: center;">
+    <h1>
+      Maraton de programacion Universidad sergio arboleda
+    </h1>
+    
+
+    <p>La maraton de programacion de l auniversidad sergio arboelda es un actividad propuesta por la escuela de ciencias exactas e ingenierias, donde se invita a los estudiantes de distintas diciplinas a enfrentarse a retos orientados en la solucion problemas dando como solucion un recurso informatico.
+    </p>
+    <p>
+    Esta iniciativa es retomada a inicios del 2021 por el profesor Juan Pablo Ospina del programa de ciencias computacionales e inteligencia artificial junto a estudiantes de ultimos semestres involucrados en el tema de programacion competitiva.
+    </p>
+
+    <h2 style="color:red">El texto es una prueba para reservar espacio - Fix!!</h2>
+    <hr class="solid">
+    </div>
+  </div>
+  <div class = "Organizators">
+    <div class="container px-4">
+      <div class="row gx-5">
+        <div class="col">
+          <div style="justify-content: center; align-content: center; display: grid;" class="p-3 border bg-light">
+          <img style="border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/ASDV.jpg') }}" alt="Avatar" width="250">
+          <br>
+            <div id="userban">
+              <a style="font-size:20px">
+              <strong>Andres Santiago Ducuara Velasquez</strong><br>
+              <i style="color:gray; font-size:15px">Ingeniero en ciencias de la computacion e inteligencia artificial</i></a>
+              <p>Organizador en 2022-2024</p>
+              <div style="text-align:center;"><a href="github.com"><i class="fa-brands fa-github"></i></a> | <a href="google.com"><i class="fa-solid fa-circle-info"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div style="justify-content: center; align-content: center; display: grid;" class="p-3 border bg-light">
+          <img style="border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/ASDV.jpg') }}" alt="Avatar" width="250">
+            <br>
+            <div id="userban">
+              <a style="font-size:20px">
+              <strong>Andres Santiago Ducuara Velasquez</strong><br>
+              <i style="color:gray; font-size:15px">Ingeniero en ciencias de la computacion e inteligencia artificial</i></a>
+              <p>Organizador en 2022-2024</p>
+              <div style="text-align:center;"><a href="github.com"><i class="fa-brands fa-github"></i></a> | <a href="google.com"><i class="fa-solid fa-circle-info"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div style="justify-content: center; align-content: center; display: grid;" class="p-3 border bg-light">
+          <img style="border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/ASDV.jpg') }}" alt="Avatar" width="250">
+            <br>
+            <div id="userban">
+              <a style="font-size:20px">
+              <strong>Andres Santiago Ducuara Velasquez</strong><br>
+              <i style="color:gray; font-size:15px">Ingeniero en ciencias de la computacion e inteligencia artificial</i></a>
+              <p>Organizador en 2022-2024</p>
+              <div style="text-align:center;"><a href="github.com"><i class="fa-brands fa-github"></i></a> | <a href="google.com"><i class="fa-solid fa-circle-info"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
