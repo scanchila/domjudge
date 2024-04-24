@@ -275,7 +275,7 @@ class PublicController extends BaseController
     /**
      * @Route("/about/winners", name="public_winners")
      */
-    public function About(): Response
+    public function About_Winners(): Response
     {
         $c1 = 'Andres Ducuara';
         $c2 = 'Santiago Canchila';
