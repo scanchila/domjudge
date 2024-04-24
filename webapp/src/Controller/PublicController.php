@@ -273,6 +273,20 @@ class PublicController extends BaseController
     }
 
     /**
+     * @Route("/about/winners", name="public_winners")
+     */
+    public function About(): Response
+    {
+        $c1 = 'Andres Ducuara';
+        $c2 = 'Santiago Canchila';
+
+        return $this->render('public/about_winners.html.twig',[
+            'creator1' => $c1,
+            'creator2' => $c2,
+    ]);
+    }
+
+    /**
      * @Route("/problems/{probId<\d+>}/text", name="public_problem_text")
      */
     public function problemTextAction(int $probId): StreamedResponse
