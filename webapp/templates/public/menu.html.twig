@@ -59,15 +59,15 @@
     var werito = new Egg();
 
     konami.addCode("up,up,down,down,left,right,left,right,b,a", function() {
-      alert("¿Creíste que un código de 1986 te ayudaría a programar? \nEsto no es Contra. A TRABAJAR!!! \n1 de 3 secretos.");
+      window.open("https://youtu.be/rPsMIZrJSWU", "theFrame", "popup");
     }, "konami-code");
     konami.addHook(function(){
       console.log("Hook called for: " + this.activeEgg.keys);
       console.log(this.activeEgg.metadata);
     });
 
-    dukra.addCode("a,b,a,c,a,b,b", function() {
-      window.open("https://youtu.be/rPsMIZrJSWU", "theFrame", "popup"); 
+    dukra.addCode("up,down,d,r,a,g,o,n,b,a,l,l", function() {
+      window.open("https://www.youtube.com/watch?v=FzokchyHC58&pp=ygUPZHJhZ29uIGJhbGwgcmFw", "theFrame", "popup"); 
     }, "dukra-code");
     dukra.addHook(function(){
       console.log("Hook called for: " + this.activeEgg.keys);

@@ -273,14 +273,14 @@ class PublicController extends BaseController
     }
 
     /**
-     * @Route("/about/winners", name="public_winners")
+     * @Route("/winners", name="public_winners")
      */
-    public function About(): Response
+    public function Winners(): Response
     {
         $c1 = 'Andres Ducuara';
         $c2 = 'Santiago Canchila';
 
-        return $this->render('public/about_winners.html.twig',[
+        return $this->render('public/winners.html.twig',[
             'creator1' => $c1,
             'creator2' => $c2,
     ]);

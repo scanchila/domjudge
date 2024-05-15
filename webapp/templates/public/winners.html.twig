@@ -1,0 +1,95 @@
+{% extends "public/base.html.twig" %}
+
+{% block title %} About - Winners {{ current_public_contest.shortname | default('') }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://www.usergioarboleda.edu.co/noticias/sergistas-brillan-en-maraton-de-programacion/"><img style="margin: auto;filter:grayscale(50%) opacity(90%);" class="img-fluid" src="{{ asset('images/winners/maraton20232.webp') }}" alt="Winner 23-2"></a>
+      </div>
+      <div class="col-md-6" style="align-content:center;">
+        <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: #002855;color: white;">
+                    <strong>El abuelo de Christian</strong> Ganadores 2023-2
+                    <span class="badge badge-pill" style="background-color:#f7ff00; color:black;">Python</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><img style="width:50px; height:50px; border-radius: 50%;margin: auto;filter: opacity(90%);" src="{{ asset('images/winners/career/Math.png') }}" alt="Avatar"></span>
+                    Juan Sebastián Caballero Bernal
+                    <span class="badge badge-primary badge-pill">5 sem</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><img style="width:50px; height:50px; border-radius: 50%;margin: auto;filter: opacity(90%);" src="{{ asset('images/winners/career/Math.png') }}" alt="Avatar"></span>
+                    Santiago Garcia Rincón
+                    <span class="badge badge-primary badge-pill">10 sem</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><img style="width:50px; height:50px; border-radius: 50%;margin: auto;filter: opacity(90%);" src="{{ asset('images/winners/career/Math.png') }}" alt="Avatar"></span>
+                    Javier Camilo Torres Peña
+                    <span class="badge badge-primary badge-pill">7 sem</span>
+                </li>
+            </ul>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-6" style="align-content:center;">
+        <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: #002855;color: white;">
+                    <strong>zeus</strong> Ganadores 2023-1
+                    <span class="badge badge-pill" style="background-color:#f7ff00; color:black;">Python</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><img style="width:50px; height:50px; border-radius: 50%;margin: auto;filter: opacity(90%);" src="{{ asset('images/winners/career/Math.png') }}" alt="Avatar"></span>
+                    Daniel Andres Piamba Escobar
+                    <span class="badge badge-primary badge-pill">9 sem</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><img style="width:50px; height:50px; border-radius: 50%;margin: auto;filter: opacity(90%);" src="{{ asset('images/winners/career/Math.png') }}" alt="Avatar"></span>
+                    Jose Efren Muñoz Munevar
+                    <span class="badge badge-primary badge-pill">10 sem</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><img style="width:50px; height:50px; border-radius: 50%;margin: auto;filter: opacity(90%);" src="{{ asset('images/winners/career/Math.png') }}" alt="Avatar"></span>
+                    Santiago  Garcia Rincón
+                    <span class="badge badge-primary badge-pill">9 sem</span>
+                </li>
+            </ul>
+      </div>
+      <div class="col-md-6">
+        <a href="default.asp"><img style="margin: auto;filter:grayscale(50%) opacity(90%);" class="img-fluid" src="{{ asset('images/winners/maraton20231.webp') }}" alt="Winner 23-1"></a>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <a href="default.asp"><img style="margin: auto;filter:grayscale(50%) opacity(90%);" class="img-fluid" src="{{ asset('images/winners/maraton20222.webp.jpg') }}" alt="Winner 22-2"></a>
+      </div>
+      <div class="col-md-6" style="align-content:center;">
+        <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center" style="background-color: #002855;color: white;">
+                    <strong>Fibonacci de X</strong>Ganadores 2023-2
+                    <span class="badge badge-pill" style="background-color:#f7ff00; color:black;">Python</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><img style="width:50px; height:50px; border-radius: 50%;margin: auto;filter: opacity(90%);" src="{{ asset('images/winners/career/Math.png') }}" alt="Avatar"></span>
+                    Felipe Parra Castro
+                    <span class="badge badge-primary badge-pill"> - </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><img style="width:50px; height:50px; border-radius: 50%;margin: auto;filter: opacity(90%);" src="{{ asset('images/winners/career/Math.png') }}" alt="Avatar"></span>
+                    Henry Mauricio Cañón Cortés
+                    <span class="badge badge-primary badge-pill"> - </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span><img style="width:50px; height:50px; border-radius: 50%;margin: auto;filter: opacity(90%);" src="{{ asset('images/winners/career/Math.png') }}" alt="Avatar"></span>
+                    Johan Andrés López Botero 
+                    <span class="badge badge-primary badge-pill"> - </span>
+                </li>
+            </ul>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

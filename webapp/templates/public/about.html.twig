@@ -4,33 +4,48 @@
 
 {% block body %}
 <div class="aboutInfo">
-  <div class="maratonReview">
-    <img class="mb-4" src="{{ asset('images/security/logoSergioB.jpg') }}" alt="Universidad Sergio Arboleda" width="600" style="display: block;
-    margin-left: auto;
-    margin-right: auto;">
-    <div style="justify-content:center; text-align: center;">
-    <h1>
-      Maraton de programacion Universidad sergio arboleda
-    </h1>
-    
+<img class="mb-4 img-fluid" src="{{ asset('images/security/logoSergioB.jpg') }}" alt="Universidad Sergio Arboleda" width="600" style="display: block;
+        margin-left: auto;
+        margin-right: auto;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" style="align-content:center;">
+        <div style="justify-content:center; text-align: center;">
+        <p><strong>La Maratón de Programación Interna</strong> de la Universidad Sergio Arboleda es una iniciativa retomada a el 2022 por el profesor Juan Pablo Ospina del programa de Ciencias Computacionales e Inteligencia Artificial, junto con estudiantes de últimos semestres involucrados en el emocionante mundo de la programación competitiva.
 
-    <p>La maraton de programacion de l auniversidad sergio arboelda es un actividad propuesta por la escuela de ciencias exactas e ingenierias, donde se invita a los estudiantes de distintas diciplinas a enfrentarse a retos orientados en la solucion problemas dando como solucion un recurso informatico.
-    </p>
-    <p>
-    Esta iniciativa es retomada a inicios del 2021 por el profesor Juan Pablo Ospina del programa de ciencias computacionales e inteligencia artificial junto a estudiantes de ultimos semestres involucrados en el tema de programacion competitiva.
-    </p>
-
-    <h2 style="color:red">El texto es una prueba para reservar espacio - Fix!!</h2>
-    <a class="nav-link" href="{{ path('public_winners') }}" style="color:white;"><i class="fa-solid fa-trophy"></i> Winners</a>
-    <hr class="solid">
+          Organizada por la Escuela de Ciencias Exactas e Ingeniería, esta maratón se ha convertido en un evento emblemático dentro de la comunidad académica de la Universidad Sergio Arboleda. Aquí, estudiantes de diversos programas tienen la oportunidad de enfrentarse a desafíos de programación emocionantes y altamente estimulantes.
+          
+          A lo largo de la competencia, los participantes deberán resolver una serie de problemas utilizando sus conocimientos en programación, algoritmos y estructuras de datos. Cada desafío representa un reto único que pondrá a prueba su creatividad, habilidades de resolución de problemas y capacidad para pensar fuera de la caja.
+          
+          La Maratón de Programación Interna de la Universidad Sergio Arboleda no solo es una oportunidad para demostrar habilidades técnicas, sino también para fomentar el trabajo en equipo, la colaboración y el intercambio de conocimientos entre diciplinas. Es un evento que celebra la pasión por la programación y el deseo de superar constantemente los límites personales.</p>
+      </div> 
     </div>
+    <div class="col-md-6" style="align-content:center;">
+      <img style="margin: auto;filter:grayscale(10%) opacity(90%);" class="img-fluid" src="{{ asset('images/organizators/organizadoresFull.jpg') }}" alt="Winner 23-2">
+    </div> 
   </div>
   <div class = "Organizators">
+    <div style="justify-content:center; text-align: center;">
+    <h1>Organizadores</h1>
+    </div>
     <div class="container px-4">
       <div class="row gx-5">
+      <div class="col">
+          <div style="justify-content: center; align-content: center; display: grid;" class="p-3 border bg-light">
+          <img style="width:250px; height:250px;  border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/Juan.png') }}" alt="Avatar" width="250">
+            <br>
+            <div id="userban">
+              <a style="font-size:20px">
+              <strong>Juan Pablo Ospina</strong><br>
+              <i style="color:gray; font-size:15px">Ingeniero de Sistemas | Magíster en Ingeniería de Sistemas y Computación | Doctor en Ingeniería de Sistemas y Computación<br><strong>juan.ospinal@usa.edu.co</strong></i></a>
+              <p>Organizador en 2022-2024</p>
+              <div style="text-align:center;"><a href="github.com"><i class="fa-brands fa-github"></i></a> | <a href="google.com"><i class="fa-solid fa-circle-info"></i></a></div>
+            </div>
+          </div>
+        </div>
         <div class="col">
           <div style="justify-content: center; align-content: center; display: grid;" class="p-3 border bg-light">
-          <img style="width:250px; height:250px; border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/ducu.jpg') }}" alt="Avatar" width="250">
+          <img style="width:250px; height:250px; border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/ducuara.jpg') }}" alt="Avatar" width="250">
           <br>
             <div id="userban">
               <a style="font-size:20px">
@@ -39,6 +54,7 @@
               <p>Organizador en 2022-2024</p>
               <div style="text-align:center;"><a href="https://github.com/AndresTY"><i class="fa-brands fa-github"></i></a> | <a href="https://andresty.github.io/Website/html/Ducu.html"><i class="fa-solid fa-circle-info"></i></a></div>
             </div>
+            
           </div>
         </div>
         <div class="col">
@@ -56,47 +72,50 @@
         </div>
         <div class="col">
           <div style="justify-content: center; align-content: center; display: grid;" class="p-3 border bg-light">
-          <img style="width:250px; height:250px;  border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/ASDV.jpg') }}" alt="Avatar" width="250">
+          <img style="width:250px; height:250px;  border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/Santi.jpg') }}" alt="Avatar" width="250">
             <br>
             <div id="userban">
               <a style="font-size:20px">
-              <strong>Santiago Perez</strong><br>
-              <i style="color:gray; font-size:15px">Ingeniero en ciencias de la computacion e inteligencia artificial</i></a>
+              <strong>Santiago Pérez González</strong><br>
+            <i style="color:gray; font-size:15px">Ingeniero de Sistemas y Telecomunicaciones | Software Engineer </i></a>
               <p>Organizador en 2022-2024</p>
-              <div style="text-align:center;"><a href="github.com"><i class="fa-brands fa-github"></i></a> | <a href="google.com"><i class="fa-solid fa-circle-info"></i></a></div>
+              <div style="text-align:center;"><a href="https://github.com/SunTea43"><i class="fa-brands fa-github"></i></a> | <a href="https://www.linkedin.com/in/santiago-p%C3%A9rez-gonz%C3%A1lez-abb49b144/"><i class="fa-solid fa-circle-info"></i></a></div>
             </div>
           </div>
         </div>
         <div class="col">
           <div style="justify-content: center; align-content: center; display: grid;" class="p-3 border bg-light">
-          <img style="width:250px; height:250px;  border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/ASDV.jpg') }}" alt="Avatar" width="250">
+          <img style="width:250px; height:250px;  border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/Andres.jpg') }}" alt="Avatar" width="250">
             <br>
             <div id="userban">
               <a style="font-size:20px">
-              <strong>Andres Lopez</strong><br>
-              <i style="color:gray; font-size:15px">Ingeniero en ciencias de la computacion e inteligencia artificial</i></a>
+              <strong>Andrés C. López R.</strong><br>
+              <i style="color:gray; font-size:15px">Ingeniero de Sistemas y Telecomunicaciones | Desarrollo de Software</i></a>
               <p>Organizador en 2022-2024</p>
-              <div style="text-align:center;"><a href="github.com"><i class="fa-brands fa-github"></i></a> | <a href="google.com"><i class="fa-solid fa-circle-info"></i></a></div>
+              <div style="text-align:center;"><a href="https://github.com/aclxrd"><i class="fa-brands fa-github"></i></a> | <a href="https://www.linkedin.com/in/aclr"><i class="fa-solid fa-circle-info"></i></a></div>
             </div>
           </div>
         </div>
         <div class="col">
           <div style="justify-content: center; align-content: center; display: grid;" class="p-3 border bg-light">
-          <img style="width:250px; height:250px;  border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/ASDV.jpg') }}" alt="Avatar" width="250">
+          <img style="width:250px; height:250px;  border-radius: 50%;margin: auto;filter:grayscale(50%) opacity(90%);" src="{{ asset('images/organizators/vale.jpg') }}" alt="Avatar" width="250">
             <br>
             <div id="userban">
               <a style="font-size:20px">
-              <strong>Juan Pablo Ospina</strong><br>
-              <i style="color:gray; font-size:15px">Ingeniero de Sistemas, Magíster en Ingeniería de Sistemas y Computación, y Doctor en Ingeniería de Sistemas y Computación</i></a>
+              <strong>Valentina Del Pilar Franco Suárez</strong><br>
+              <i style="color:gray; font-size:15px">Ingeniero en ciencias de la computacion e inteligencia artificial</i></a>
               <p>Organizador en 2022-2024</p>
-              <div style="text-align:center;"><a href="github.com"><i class="fa-brands fa-github"></i></a> | <a href="google.com"><i class="fa-solid fa-circle-info"></i></a></div>
+              <div style="text-align:center;"><a href="https://github.com/valentinafranco"><i class="fa-brands fa-github"></i></a> | <a href="https://www.linkedin.com/in/valentina-del-pilar-franco-su%C3%A1rez-24b11b175"><i class="fa-solid fa-circle-info"></i></a></div>
             </div>
           </div>
         </div>
       </div>
       <br>
     </div>
-
+  </div>
+  <div class = "Winners" style="justify-content:center; text-align: center;">
+    <h1>Ganadores ediciones anteriores</h1>
+    <a class="nav-link" href="{{ path('public_winners') }}" style="color:black;"><i class="fa-solid fa-trophy"></i> Winners</a>
   </div>
 </div>
 
