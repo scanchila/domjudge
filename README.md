@@ -1,38 +1,38 @@
-## Imagen de Domjudge
+## Domjudge Image
 
-Este repositorio contiene la dockerización de Domjudge, adaptado para la maratón de programación interna de la Universidad Sergio Arboleda. Se ha personalizado con los colores y logotipos institucionales, además de mejorar la experiencia de usuario en la sección de inicio de sesión. También se ha añadido una sección "Acerca de" donde se muestran los organizadores junto con los últimos ganadores.
+This repository contains the Dockerization of Domjudge, tailored for the internal programming marathon at Universidad Sergio Arboleda. It has been customized with institutional colors and logos, along with enhanced user experience in the login section. Additionally, an "About" section has been added to showcase the organizers alongside the latest winners.
 
-## Despliegue
+## Deployment
 
-### Construir y ejecutar el contenedor Docker
+### Build and run Docker container
 ```shell
 make build
 ```
 
-### Ejecutar el contenedor Docker
+### Run Docker container
 ```shell
 make up
 ```
 
-### Detener el contenedor Docker
+### Stop Docker container
 ```shell
 make down
 ```
 
-### Mostrar los registros
+### Show logs
 ```shell
 make show-logs
 ```
 
-# Configuración de EC2
-- Tipo: t3.large
-- Sistema operativo: Ubuntu LTS
-- Volumen: 8 GB de root (predeterminado) - 20 GB de gd3 (adicional)
-- Puertos habilitados: 433, 80, 22
-- IP elástica
-- Dominio
+# EC2 Configuration
+- Type: t3.large
+- Operating System: Ubuntu LTS
+- Volume: 8 GB root (default) - 20 GB gd3 (additional)
+- Enabled ports: 433, 80, 22
+- Elastic IP
+- Domain
 
-# Instalación de Docker
+# Docker Installation
 ```shell
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
@@ -44,14 +44,14 @@ sudo apt install docker-ce
 sudo systemctl status docker
 ```
 
-# Configuración de Docker
+# Docker Configuration
 ```shell
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 ```
 
-# Construir y ejecutar Docker
+# Build and Run Docker
 ```shell
 make build
 docker compose up (dev)
