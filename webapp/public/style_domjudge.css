@@ -1,7 +1,7 @@
 :root {
     /** Specify the BG color in one place. **/
     --background-color: #f5f5f5;
-    --text-color: black;
+    --text-color: rgb(0, 0, 0);
     /** WCAG fixes begin **/
     --btn-info-bg: #008297;
     /** WCAG fixes end **/
