@@ -62,21 +62,27 @@
       window.open("https://youtu.be/rPsMIZrJSWU", "theFrame", "popup");
     }, "konami-code");
     konami.addHook(function(){
-      console.log("Hook called for: " + this.activeEgg.keys);
-      console.log(this.activeEgg.metadata);
+      console.log("Juan Alberto");
     });
 
     dukra.addCode("up,down,d,r,a,g,o,n,b,a,l,l", function() {
       window.open("https://www.youtube.com/watch?v=FzokchyHC58&pp=ygUPZHJhZ29uIGJhbGwgcmFw", "theFrame", "popup"); 
     }, "dukra-code");
     dukra.addHook(function(){
-      console.log("Hook called for: " + this.activeEgg.keys);
-      console.log(this.activeEgg.metadata);
+      console.log("Pringao!!!");
+    });
+
+    werito.addCode("up,down,up,down", function() {
+      alert("CASI JUAN"); 
+    }, "werito-code");
+    werito.addHook(function(){
+      console.log("Tu no metes cabra");
     });
 
     
     konami.listen();
     dukra.listen();
+    werito.listen();
   
 </script>
 
