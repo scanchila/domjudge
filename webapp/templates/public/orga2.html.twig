@@ -1,0 +1,104 @@
+{% extends "public/base.html.twig" %}
+
+{% block title %} About - Organizadores ediciones pasadas {{ current_public_contest.shortname | default('') }} {% endblock %}
+
+{% block body %}
+<div class="container">
+    {% for organizer in orga2 %}
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="p-3 border bg-light text-center">
+                <img style="width:250px; height:250px; border-radius: 50%; margin: auto; filter:grayscale(50%) opacity(90%);" src="{{ asset(organizer.image) }}" alt="Avatar">
+                <br>
+                <div id="userban">
+                    <a style="font-size:20px">
+                        <strong>{{ organizer.name }}</strong><br>
+                        <i style="color:gray; font-size:15px">{{ organizer.title }}</i>
+                    </a>
+                    <p>Organizador en {{ organizer.period }}</p>
+                    <div style="text-align:center;">
+                        {% if organizer.github %} 
+                            <a href="{{ organizer.github }}"><i class="fa-brands fa-github"></i></a> 
+                        {% endif %}
+                        {% if organizer.info %}
+                            | <a href="{{ organizer.info }}"><i class="fa-solid fa-circle-info"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 80px; text-align: center;">Año</th>  
+                        <th scope="col">Actividad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if organizer.Apoyos is not empty %}
+                        {% for acti in organizer.Apoyos %}
+                            <tr>
+                                <th scope="row" style="width: 80px; text-align: center;">{{ acti.Period }}</th> 
+                                <td>{{ acti.do }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="2" class="text-center">No hay apoyos disponibles.</td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="hr-container">
+        <hr>
+        <i class="fas fa-code hr-icon"></i>
+        <hr>
+    </div>
+    {% endfor %}
+</div>
+
+<style>
+.row.mt-4 {
+    border-radius: 15px;  
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);  
+    padding: 10px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.row.mt-4:hover {
+    transform: scale(1.02);
+}
+
+.row.mt-4 img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.row.mt-4:hover img {
+    transform: scale(1.1);
+}
+
+.hr-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.hr-container hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #002855;
+}
+
+.hr-icon {
+    margin: 0 10px;
+    font-size: 20px;
+    color: black;
+}
+</style>
+{% endblock %}

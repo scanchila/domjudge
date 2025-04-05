@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block menu %}
+    {% include 'public/menu.html.twig' %}
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <img src={{ asset('images/error.jpg') }}  alt="Error animation" style="padding-bottom: inherit;">
+                <h1>
+                    {{ status_code }} {{ status_text }}</h1>
+                <div class="error-details">
+                    Sorry, an error has occurred: {{ status_text }}.
+                </div>
+                <div class="error-details">
+                    Ducu is working to fix this error.
+                </div>
+                {% if is_granted("ROLE_JURY") and exception.message is defined %}
+                <div class="error-details mt-4" style="text-align: left;">
+                    <code>{{ exception.message }}</code>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
