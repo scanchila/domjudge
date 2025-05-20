@@ -263,6 +263,22 @@ class PublicController extends BaseController
                 'info' => 'https://www.usergioarboleda.edu.co/escuela-de-ciencias-exactas-e-ingenieria/Sobre-la-Escuela/',
                 'period' => '2022-2024',
             ],
+            [
+                'name' => 'Valerie Gutiérrez Zambrano',
+                'title' => 'Estudiantes de ciencias de la computación e inteligencia artificial - sem 1', 
+                'image' => 'images/organizators/default.jpg',
+                'github' => 'https://github.com',
+                'info' => 'https://www.usergioarboleda.edu.co/escuela-de-ciencias-exactas-e-ingenieria/Sobre-la-Escuela/',
+                'period' => '2025',
+            ],
+             [
+                'name' => 'Juan Felipe Gonzalez Barrera',
+                'title' => 'Estudiantes de ciencias de la computación e inteligencia artificial - sem 1', 
+                'image' => 'images/organizators/default.jpg',
+                'github' => 'https://github.com',
+                'info' => 'https://www.usergioarboleda.edu.co/escuela-de-ciencias-exactas-e-ingenieria/Sobre-la-Escuela/',
+                'period' => '2025',
+            ],
         ];
         $c1 = 'Andres Ducuara';
         $c2 = 'Santiago Canchila';
@@ -315,7 +331,7 @@ class PublicController extends BaseController
             [
                 'name' => 'Juan cortes ',
                 'title' => 'Ingeniero en ciencias de la computacion e inteligencia artificial',
-                'image' => '',
+                'image' => 'images/organizators/default.jpg',
                 'github' => 'www.github.com',
                 'info' => 'https://www.usergioarboleda.edu.co/',
                 'Apoyos' => [
@@ -346,7 +362,7 @@ class PublicController extends BaseController
                 'members' => [
                     ['name' => 'Juan Sebastián Caballero Bernal', 'career' => 'Math', 'semester' => '7 sem'],
                     ['name' => 'Santiago Garcia Rincón', 'career' => 'Math', 'semester' => '10 sem'],
-                    ['name' => '...', 'career' => 'Math', 'semester' => '7 sem']
+                    ['name' => 'Sergio Andres Caceres Diaz', 'career' => 'Math', 'semester' => '7 sem']
                 ]
             ],
             [
